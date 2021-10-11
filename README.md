@@ -46,7 +46,6 @@ git remote add origin <repo link>
 ```bash
 git branch -M main
 ```
-
 ```bash
 git push -u origin main
 ```
