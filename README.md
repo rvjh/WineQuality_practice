@@ -50,6 +50,13 @@ git branch -M main
 git push -u origin main
 ```
 
+ * Now we will start developing the main part. In params.yaml file write base, data_source, load_data, split_data, 
+estimators, model_dir, reports and all its components.
+ * The interpretation will be something like this : we take the data from data_source and put in load_data then we 
+will do split_data then estimators for models and their parameters and defined model directory for saving the models.
+ * Inside dvc.yaml file we will mention the stages. 
+
+
 
 
 
