@@ -54,7 +54,13 @@ git push -u origin main
 estimators, model_dir, reports and all its components.
  * The interpretation will be something like this : we take the data from data_source and put in load_data then we 
 will do split_data then estimators for models and their parameters and defined model directory for saving the models.
- * Inside dvc.yaml file we will mention the stages. 
+ * Inside dvc.yaml file we will mention the stages later. 
+
+Now starting the first stage:
+ * inside src create a file get_data.py 
+ * it will just read the params, process it and return  the dataframe
+
+
 
 
 
