@@ -42,9 +42,15 @@ git commit -m "First Commit"
 Now create a github repo. and run the commands
 ```bash
 git remote add origin <repo link>
+```
+```bash
 git branch -M main
+```
+
+```bash
 git push -u origin main
 ```
+
 
 
 
