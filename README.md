@@ -90,7 +90,13 @@ mkdir report
 dvc metrics show
 dvc metrics diff 
 ```
-
+#### our 3rd stage i.e. train_and_evaluate stage is completed
+#### now we will do testing part i.e. stage 4
+* for testing we need to install two libraries pytest and tox install them using requirements.txt file
+```bash
+pip install pytest
+pip install tox 
+```
 
 
 
