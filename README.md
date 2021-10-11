@@ -75,7 +75,21 @@ dvc repro
 * run the dvc repro command
 * save the chages and push it in github
 #### our stage 2 complete
-
+#### Now our training and Evaluation stage 3
+* create train_and_evaluate.py in src it will load train and test csv files from data\processes, train algorithm and save
+  the metrics and parameters
+* here we are getting different output based on different values of params and metrics so we will create params.json
+  and metrics.json to track all of these. So create a new folder report inside we will create params.json and metrics.json
+```bash
+mkdir report 
+```
+* in dvc.yaml file mention the train_and_evaluate stage its cmd, dependencies, params, metrics and reports
+* after all do dvc repro
+* you can change the params and see the changes in the score and compare with previous scores by running: 
+```bash
+dvc metrics show
+dvc metrics diff 
+```
 
 
 
