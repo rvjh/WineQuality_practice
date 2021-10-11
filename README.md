@@ -56,7 +56,7 @@ estimators, model_dir, reports and all its components.
 will do split_data then estimators for models and their parameters and defined model directory for saving the models.
  * Inside dvc.yaml file we will mention the stages later. 
 
-Now starting the first stage:
+#### Now starting the first stage:
  * inside src create a file get_data.py 
  * it will just read the params, process it and return  the dataframe and we will call it from other custom functions.
  * inside src create load_data.py for copying or moving data from data_given to data\raw folder for further process
@@ -69,6 +69,12 @@ it keeps track of all the chages made in the stages.
 dvc repro
 ```
 #### Now our stage 1 complete
+#### Now second stage 
+* create a file split_data.py inside src it will split the raw into train and test data and move it to data\processed.
+* now write that split_data stages in dvc.yaml file i.e. command dependencies and outputs. 
+* run the dvc repro command
+* save the chages and push it in github
+
 
 
 
