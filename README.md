@@ -58,7 +58,7 @@ will do split_data then estimators for models and their parameters and defined m
 
 Now starting the first stage:
  * inside src create a file get_data.py 
- * it will just read the params, process it and return  the dataframe
+ * it will just read the params, process it and return  the dataframe and we will call it from other custom functions,
 
 
 
