@@ -74,7 +74,7 @@ dvc repro
 * now write that split_data stages in dvc.yaml file i.e. command dependencies and outputs. 
 * run the dvc repro command
 * save the chages and push it in github
-
+#### our stage 2 complete
 
 
 
