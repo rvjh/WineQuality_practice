@@ -97,7 +97,39 @@ dvc metrics diff
 pip install pytest
 pip install tox 
 ```
+* links : tox "https://tox.wiki/en/latest/"
+* tox used for automating testing it create virtual environments and also it allows you to create different environment
+  for testing purpose like python 2.7, 3.7 etc.
+* for this create a tox.ini file in root directory in that specify python environment test environment and their dependencies
+  and specify the command for different test cases
+* now for the test cases create a folder tests and inside that create conftest.py, test_conf.py and __init__.py
+* whenever you create a test case you need to define function name starts with "test_" and then any name preferable.
+* after creating a test case you can run the command, it will retun if the test case passed or failed
+```bash
+pytest -v 
+```
+* the same test case we can run using tox command also, it will create a virtual environment, start installing 
+  dependencies and for reloading the environment created
+```bash
+tox
+tox -r
+```
+* create setup.py file in root directory for creating packages, findpackages will find the default packages stored in srd
+  and inside setup mention name, author, description etc. after that run
+```bash
+pip install -e . 
+```
+* if you do pip freeze and do import src to see if src package installed in the system or not
+* now this src packaging will create a folder src.egg-info which contain all the info regarding the package
+* this package can also  be created in wheel file or tar file
+```bash
+python setup.py sdist bdist_wheel 
+```
+  we can share this and install in other system
+* not require for the time being
 
+
+        
 
 
 
