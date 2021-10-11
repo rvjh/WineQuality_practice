@@ -68,7 +68,7 @@ it keeps track of all the chages made in the stages.
 ```bash
 dvc repro
 ```
-
+#### Now our stage 1 complete
 
 
 
